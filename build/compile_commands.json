@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/avan2101/git_repos/tcp_tests/build",
+  "command": "/usr/bin/g++    -g   -o CMakeFiles/tcp_test.dir/main.cpp.o -c /home/avan2101/git_repos/tcp_tests/main.cpp",
+  "file": "/home/avan2101/git_repos/tcp_tests/main.cpp"
+}
+]

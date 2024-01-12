@@ -1,7 +1,12 @@
 [
 {
   "directory": "/home/avan2101/git_repos/tcp_tests/build",
-  "command": "/usr/bin/g++  -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK  -g   -o CMakeFiles/tcp_test.dir/main.cpp.o -c /home/avan2101/git_repos/tcp_tests/main.cpp",
-  "file": "/home/avan2101/git_repos/tcp_tests/main.cpp"
+  "command": "/usr/bin/g++  -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK  -g   -o CMakeFiles/client.dir/client_main.cpp.o -c /home/avan2101/git_repos/tcp_tests/client_main.cpp",
+  "file": "/home/avan2101/git_repos/tcp_tests/client_main.cpp"
+},
+{
+  "directory": "/home/avan2101/git_repos/tcp_tests/build",
+  "command": "/usr/bin/g++  -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK  -g   -o CMakeFiles/server.dir/server_main.cpp.o -c /home/avan2101/git_repos/tcp_tests/server_main.cpp",
+  "file": "/home/avan2101/git_repos/tcp_tests/server_main.cpp"
 }
 ]

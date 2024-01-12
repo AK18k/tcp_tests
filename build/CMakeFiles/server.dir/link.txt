@@ -1,0 +1,1 @@
+/usr/bin/g++  -g  -rdynamic CMakeFiles/server.dir/server_main.cpp.o  -o server  /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0 -lpthread 

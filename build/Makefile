@@ -261,19 +261,6 @@ NightlyUpdate/fast:
 .PHONY : NightlyUpdate/fast
 
 #=============================================================================
-# Target rules for targets named tcp_test
-
-# Build rule for target.
-tcp_test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tcp_test
-.PHONY : tcp_test
-
-# fast build rule for target.
-tcp_test/fast:
-	$(MAKE) -f CMakeFiles/tcp_test.dir/build.make CMakeFiles/tcp_test.dir/build
-.PHONY : tcp_test/fast
-
-#=============================================================================
 # Target rules for targets named ExperimentalMemCheck
 
 # Build rule for target.
@@ -324,6 +311,19 @@ ContinuousCoverage: cmake_check_build_system
 ContinuousCoverage/fast:
 	$(MAKE) -f CMakeFiles/ContinuousCoverage.dir/build.make CMakeFiles/ContinuousCoverage.dir/build
 .PHONY : ContinuousCoverage/fast
+
+#=============================================================================
+# Target rules for targets named client
+
+# Build rule for target.
+client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 client
+.PHONY : client
+
+# fast build rule for target.
+client/fast:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/build
+.PHONY : client/fast
 
 #=============================================================================
 # Target rules for targets named ExperimentalConfigure
@@ -520,32 +520,72 @@ ContinuousSubmit/fast:
 	$(MAKE) -f CMakeFiles/ContinuousSubmit.dir/build.make CMakeFiles/ContinuousSubmit.dir/build
 .PHONY : ContinuousSubmit/fast
 
-main.o: main.cpp.o
+#=============================================================================
+# Target rules for targets named server
 
-.PHONY : main.o
+# Build rule for target.
+server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 server
+.PHONY : server
+
+# fast build rule for target.
+server/fast:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/build
+.PHONY : server/fast
+
+client_main.o: client_main.cpp.o
+
+.PHONY : client_main.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/tcp_test.dir/build.make CMakeFiles/tcp_test.dir/main.cpp.o
-.PHONY : main.cpp.o
+client_main.cpp.o:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/client_main.cpp.o
+.PHONY : client_main.cpp.o
 
-main.i: main.cpp.i
+client_main.i: client_main.cpp.i
 
-.PHONY : main.i
+.PHONY : client_main.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/tcp_test.dir/build.make CMakeFiles/tcp_test.dir/main.cpp.i
-.PHONY : main.cpp.i
+client_main.cpp.i:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/client_main.cpp.i
+.PHONY : client_main.cpp.i
 
-main.s: main.cpp.s
+client_main.s: client_main.cpp.s
 
-.PHONY : main.s
+.PHONY : client_main.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/tcp_test.dir/build.make CMakeFiles/tcp_test.dir/main.cpp.s
-.PHONY : main.cpp.s
+client_main.cpp.s:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/client_main.cpp.s
+.PHONY : client_main.cpp.s
+
+server_main.o: server_main.cpp.o
+
+.PHONY : server_main.o
+
+# target to build an object file
+server_main.cpp.o:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server_main.cpp.o
+.PHONY : server_main.cpp.o
+
+server_main.i: server_main.cpp.i
+
+.PHONY : server_main.i
+
+# target to preprocess a source file
+server_main.cpp.i:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server_main.cpp.i
+.PHONY : server_main.cpp.i
+
+server_main.s: server_main.cpp.s
+
+.PHONY : server_main.s
+
+# target to generate assembly for a file
+server_main.cpp.s:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server_main.cpp.s
+.PHONY : server_main.cpp.s
 
 # Help Target
 help:
@@ -566,11 +606,11 @@ help:
 	@echo "... ExperimentalTest"
 	@echo "... ContinuousUpdate"
 	@echo "... NightlyUpdate"
-	@echo "... tcp_test"
 	@echo "... ExperimentalMemCheck"
 	@echo "... ExperimentalSubmit"
 	@echo "... Experimental"
 	@echo "... ContinuousCoverage"
+	@echo "... client"
 	@echo "... ExperimentalConfigure"
 	@echo "... Continuous"
 	@echo "... Nightly"
@@ -587,9 +627,13 @@ help:
 	@echo "... ContinuousMemCheck"
 	@echo "... ContinuousTest"
 	@echo "... ContinuousSubmit"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... server"
+	@echo "... client_main.o"
+	@echo "... client_main.i"
+	@echo "... client_main.s"
+	@echo "... server_main.o"
+	@echo "... server_main.i"
+	@echo "... server_main.s"
 .PHONY : help
 
 

@@ -11,11 +11,11 @@
 /home/avan2101/git_repos/tcp_tests/build/CMakeFiles/ExperimentalTest.dir
 /home/avan2101/git_repos/tcp_tests/build/CMakeFiles/ContinuousUpdate.dir
 /home/avan2101/git_repos/tcp_tests/build/CMakeFiles/NightlyUpdate.dir
-/home/avan2101/git_repos/tcp_tests/build/CMakeFiles/tcp_test.dir
 /home/avan2101/git_repos/tcp_tests/build/CMakeFiles/ExperimentalMemCheck.dir
 /home/avan2101/git_repos/tcp_tests/build/CMakeFiles/ExperimentalSubmit.dir
 /home/avan2101/git_repos/tcp_tests/build/CMakeFiles/Experimental.dir
 /home/avan2101/git_repos/tcp_tests/build/CMakeFiles/ContinuousCoverage.dir
+/home/avan2101/git_repos/tcp_tests/build/CMakeFiles/client.dir
 /home/avan2101/git_repos/tcp_tests/build/CMakeFiles/ExperimentalConfigure.dir
 /home/avan2101/git_repos/tcp_tests/build/CMakeFiles/Continuous.dir
 /home/avan2101/git_repos/tcp_tests/build/CMakeFiles/Nightly.dir
@@ -32,3 +32,4 @@
 /home/avan2101/git_repos/tcp_tests/build/CMakeFiles/ContinuousMemCheck.dir
 /home/avan2101/git_repos/tcp_tests/build/CMakeFiles/ContinuousTest.dir
 /home/avan2101/git_repos/tcp_tests/build/CMakeFiles/ContinuousSubmit.dir
+/home/avan2101/git_repos/tcp_tests/build/CMakeFiles/server.dir

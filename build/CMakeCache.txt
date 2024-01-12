@@ -20,6 +20,14 @@ BUILD_TESTING:BOOL=ON
 //Path to a program.
 BZRCOMMAND:FILEPATH=BZRCOMMAND-NOTFOUND
 
+//The directory containing a CMake configuration file for Boost.
+Boost_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0
+
+//Path to a file.
+Boost_INCLUDE_DIR:PATH=/usr/include
+
+Boost_SYSTEM_LIBRARY_RELEASE:STRING=/usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
+
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
 
@@ -329,6 +337,12 @@ SLURM_SRUN_COMMAND:FILEPATH=SLURM_SRUN_COMMAND-NOTFOUND
 //Path to a program.
 SVNCOMMAND:FILEPATH=SVNCOMMAND-NOTFOUND
 
+//The directory containing a CMake configuration file for boost_headers.
+boost_headers_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_headers-1.71.0
+
+//The directory containing a CMake configuration file for boost_system.
+boost_system_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_system-1.71.0
+
 //Value Computed by CMake
 cpp_test_BINARY_DIR:STATIC=/home/avan2101/git_repos/tcp_tests/build
 
@@ -348,6 +362,8 @@ tcp_test_SOURCE_DIR:STATIC=/home/avan2101/git_repos/tcp_tests
 
 //ADVANCED property for variable: BZRCOMMAND
 BZRCOMMAND-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_DIR
+Boost_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_ADDR2LINE
 CMAKE_ADDR2LINE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_AR
@@ -539,6 +555,8 @@ CVSCOMMAND-ADVANCED:INTERNAL=1
 CVS_UPDATE_OPTIONS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: DART_TESTING_TIMEOUT
 DART_TESTING_TIMEOUT-ADVANCED:INTERNAL=1
+//Details about finding Boost
+FIND_PACKAGE_MESSAGE_DETAILS_Boost:INTERNAL=[/usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake][cfound components: system ][v1.71.0()]
 //ADVANCED property for variable: GITCOMMAND
 GITCOMMAND-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: HGCOMMAND
@@ -559,4 +577,8 @@ SLURM_SBATCH_COMMAND-ADVANCED:INTERNAL=1
 SLURM_SRUN_COMMAND-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: SVNCOMMAND
 SVNCOMMAND-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: boost_headers_DIR
+boost_headers_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: boost_system_DIR
+boost_system_DIR-ADVANCED:INTERNAL=1
 

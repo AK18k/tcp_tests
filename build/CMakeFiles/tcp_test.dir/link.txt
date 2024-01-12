@@ -1,1 +1,1 @@
-/usr/bin/g++  -g  -rdynamic CMakeFiles/tcp_test.dir/main.cpp.o  -o tcp_test 
+/usr/bin/g++  -g  -rdynamic CMakeFiles/tcp_test.dir/main.cpp.o  -o tcp_test  /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0 -lpthread 
